@@ -1,0 +1,147 @@
+﻿body{
+	scrollbar-arrow-color: #f4ae21;
+	overflow-x:hidden;
+}
+
+
+
+/*不需要打印的部分*/
+@media print {
+
+.noprint {display:none}
+
+}
+
+/*工具栏图标样式设置*/
+.tools{ 
+	width:407px;
+	height:42px;
+	right:0px;
+	top:0%;
+	position:absolute;
+	z-index:2;
+}
+
+
+
+#icons{
+	background-color:black;
+	opacity:0.6;
+	width:380px;
+	height:32px;
+	right:0px;
+	margin:0 auto;
+	padding-top:5px;
+	padding-bottom:5px;
+	float:right;
+}
+
+#icons img:hover {cursor:pointer;}
+
+.ztree li span.button.add {margin-left:2px; margin-right: -1px; background-position:-144px 0; vertical-align:top; *vertical-align:middle}
+
+#junqu{
+	z-index:2;
+	position:absolute;
+	bottom:0px;
+	font-family:"Microsoft YaHei",微软雅黑;
+}
+#junqu ul {  
+    margin: 0;  
+    padding: 0;  
+    list-style: none;  
+    width: 120px; /* Width of Menu Items */  
+    border-bottom: 1px solid #ccc;  
+    }  
+      
+#junqu ul li {  
+    position: relative;  
+	list-style-type:none;
+    }  
+      
+#junqu li ul {  
+    position: absolute;  
+    left: 119px; /* Set 1px less than menu width */  
+    bottom:0;  
+    display: none;  
+}  
+  
+/* Styles for Menu Items */  
+.head { 
+	height:50px;
+    display: block;
+	font-size:25px;
+	color:white;
+	
+	text-align:center;
+	border-radius:10px;
+    text-decoration: none;    
+    background: black; /* IE6 Bug */  
+	opacity:0.6;
+    padding-top: 15px;  
+    border: 1px solid #ccc; /* IE6 Bug */  
+    border-bottom: 0;  
+}  
+
+.content{ 
+    display: block;
+	text-align:center;
+	opacity:0.7; 
+	padding:5px;    
+    border-bottom: 0;	
+ }  
+ 
+.content  li{
+	font-size:20px;
+	color:white;
+	background: black; /* IE6 Bug */  
+	border: 1px solid #ccc; /* IE6 Bug */  
+	border-radius:10px;
+}
+
+ 
+  
+#junqu li:hover ul, li.over ul { display: block;
+	cursor:pointer;
+} /* The magic */  
+#junqu li:hover {background:blue;}
+#junqu ul:hover{cursor:pointer;}
+
+.mh_right{
+    width:22px;
+    height:33px;
+    cursor:pointer;
+    background:url(../images/tanchu.png) no-repeat left center;
+    opacity: 0.6;
+  	background-size:21px 33px;
+}
+
+.mh_left{
+    width:22px;
+    height:33px;
+    cursor:pointer;
+    background:url(../images/tanru.png) no-repeat;
+   //opacity: 0.6;
+   background-size:21px 33px;
+    
+}
+
+.in{
+    width:27px;
+    height:42px;
+    cursor:pointer;
+      padding:0px;
+    background:url(../images/tools/in.png) no-repeat  right ;
+        background-size:27px 42px;
+      //  opacity: 0.6;
+}
+
+.out{
+    width:27px;
+    height:42px;
+    cursor:pointer;
+    padding:0px;
+    background:url(../images/tools/out.png) no-repeat right ;
+        background-size:26px 42px;
+        opacity: 0.6;
+}

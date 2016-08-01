@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+body
+{
+
+}
+.menu{ 
+	padding:10px;
+	background: rgb(128,128,128);
+	
+}
+
+/* 超链接 */
+.menu a{ 
+	color:#222; 
+	text-decoration:none; 
+}
+
+/* 鼠标经过的超链接 */
+.menu a:hover{ 
+	color:#f33; 
+	text-decoration:underline;
+}
+
+/* 菜单 */
+.menu ul{ 
+	padding:0 0 0 18px; 
+	margin:0; 
+}
+
+/* 菜单项 */
+.menu ul li{ 
+	font-size:13px; 
+	color:#222; 
+	line-height:18px; 
+	cursor:pointer;
+	list-style:none; 
+	background:url(../images/menu/st_node.gif); 
+	background-repeat:no-repeat; 
+	padding:0 0 3px 20px;
+}
+.menu .edit_add{ 
+	width:15px;
+	height:15px;
+}
+.menu .edit_remove{ 
+	width:15px;
+	height:15px;
+}
+.menu .edit
+{
+	width:15px; 
+	height:15px;
+}
+.menu .edit
+{
+	width:15px; 
+	height:15px;
+}
+/* 子菜单 */
+.menu ul li ul{}
+
+/* 子菜单项 */
+.menu ul li ul li{}
+
+/* 子菜单的父节点 */
+.menu .folder{  
+	background:url(../images/menu/st_folder.gif); 
+	background-repeat:no-repeat; 
+	padding:0 0 0 20px; 
+}
+
+/* 展开的父节点 */
+.menu .open{  
+	background:url(../images/menu/st_folder_open.gif); 
+	background-repeat:no-repeat; 
+	padding:0 0 0 20px; 
+}
+
+.menu .hover{
+	background-color:#ffa;
+}
